@@ -1,0 +1,76 @@
+.right {
+  margin-right: 20px;
+}
+.list {
+  background-color: white;
+}
+.child {
+  background-color: white;
+  padding: 20px;
+}
+.flx {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.trash {
+  background-color: white;
+  margin-right: 5px;
+  color: rgb(163, 162, 162);
+}
+.circle {
+  font-size: 22px;
+  color: #936bca;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 660;
+  background-color: white;
+  margin-right: 10px;
+}
+.packs {
+  font-size: 11px;
+  color: rgb(155, 155, 155);
+  font-weight: 500;
+  background-color: white;
+}
+.mrp {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(155, 155, 155);
+  background-color: white;
+}
+.mrp span {
+  background-color: white;
+}
+.price {
+  font-size: 13px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.cart {
+  width: 45%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+.image {
+  width: 40%;
+  height: 40%;
+}
+
+.totalamount {
+  position: fixed;
+  bottom: 0;
+  right: 100;
+  width: "45%";
+  margin: auto;
+  border: "1px solid";
+}
