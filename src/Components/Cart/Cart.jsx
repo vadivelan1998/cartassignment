@@ -9,8 +9,10 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const nav=useNavigate()
   const [totalAmount, setTotalAmount] = useState();
   const [cartdata, setCartData] = useState([
     {
@@ -88,7 +90,7 @@ const Cart = () => {
   };
   return (
     <div>
-      <div style={{ textAlign: "left", width: "45%", margin: "auto" }}>
+      <div className="address">
         <h2>
           <FontAwesomeIcon
             style={{ color: "teal", background: "white" }}
@@ -191,10 +193,34 @@ const Cart = () => {
           </div>
         </div>
       </div>
+      <div style={{ padding: "80px" }}></div>
+      <div className="footer">
+        {/* <div className="totalamount"> */}
+        <div className="flx" style={{ justifyContent: "space-around" }}>
+          <p style={{ fontSize: "18px" }}>Total amount</p>
+          <p style={{ fontSize: "18px" }}>{totalAmount}</p>
+        </div>
+        <br />
+        <button
+          style={{
+            // padding: "5px",
+            color: "white",
+            background: "#414bb2",
+            border: "none",
+            width: "50%",
+            height: "40px",
+            borderRadius: "3px",
 
-      <div className="totalamount">
-        Total amount : {totalAmount}
-        <Link to="/order">Place Order</Link>
+            // width:"max-content",
+            // padding:"15px 90px"
+          }}
+          onClick={() => {
+            nav("/order");
+          }}
+        >
+          Place Order
+        </button>
+        {/* </div> */}
       </div>
     </div>
   );
